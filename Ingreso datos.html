@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Caos News - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importamos los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./custom-styles.css">
+</head>
+
+<body>
+  <!-- Barra navegadora -->
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="consulta.html"><img src="logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="consulta.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contratos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Ingreso datos.html">Ingreso de Datos</a></li>
+                <li><a class="dropdown-item" href="consulta.html">Consulta de Contratos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Formulario de contratos -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="row justify-content-center mb-4">Ingreso de Contratos</h2>
+          <form class="row justify-content-center">
+            <div class="col-8 mb-2">
+              <label for="contrato" class="form-label">Contrato</label>
+              <input required type="tel" class="form-control" id="contrato" name="contrato" minlength="9" maxlength="9"
+                pattern="[0-9]{9}" title="Ingrese un número de contrato válido con 9 dígitos numéricos">
+            </div>
+            <div class="col-8 mb-2">
+              <label for="telefono" class="form-label">Rut</label>
+                <input required type="tel" class="form-control" id="Rut" name="Rut" minlength="9"
+                  maxlength="9" pattern="[0-9]{9}" title="Ingrese un número de teléfono válido con 9 dígitos">
+            </div>
+            <div class="col-8 mb-2">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class=" col-8 mb-2">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input required="" type="text" class="form-control" id="apellido" name="apellido" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class=" col-8 mb-2">
+              <label for="apellido" class="form-label">Destino</label>
+              <input required="" type="text" class="form-control" id="destino" name="destino" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class=" col-8 mb-2">
+              <label for="apellido" class="form-label">Hotel</label>
+              <input required="" type="text" class="form-control" id="Hotel" name="Hotel" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class=" col-8 mb-2">
+              <label for="apellido" class="form-label">Direccion</label>
+              <input required="" type="text" class="form-control" id="Direccion" name="Direccion" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class=" col-8 mb-4">
+              <label for="apellido" class="form-label">Servicios Adicionales</label>
+              <input required="" type="text" class="form-control" id="servadicional" name="servadicional" 
+                required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" title="Ingrese solo letras">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-dark">Ingresar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>  
+    </div>
+  </div>
+      <!-- Copyright -->   
+      <footer class="bg-dark text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0);">
+          <p style="color: rgb(138, 138, 138);">© 2023 Copyright. Desarrollado por Hurub+.</p>
+        </div>
+      </footer>
+    <!-- Importamos los scripts de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  
